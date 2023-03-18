@@ -4,17 +4,21 @@
 
 int main()
 {
-    int n, m;
-    scanf("%d" "%d", &n, &m);
-    if(n > m){
-    	printf("1");
+    int a, b, c, x, y;
+    scanf("%d" "%d" "%d", &a, &b, &c);
+    if (a > b){
+        x = a;
+    } 
+    else {
+        x = b;
     }
-    else if(n < m){
-	printf("2");
+    if (x > c){
+        y = x;
     }
-    else{
-    	printf("0");
+    else {
+        y = c;
     }
+    printf("%d", y);
 
     return 0;
 }
