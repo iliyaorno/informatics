@@ -1,13 +1,14 @@
 #include <stdio.h>
 
 int main () {
-    int i = 1, n;
+    int n;
+    int i = 1;
     scanf("%d", &n);
  
-    while(i < n){
+    while(i < n) {
         i <<= 1;
     }
-    if (n == i){
+    if (n == i) {
         printf("YES");
     }
     else{
