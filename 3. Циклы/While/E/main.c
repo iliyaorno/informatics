@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 int main () {
-    int i = 1, x, y;
-    scanf("%d""%d", &x, &y);
+    int i = 0, y;
+    scanf("%d", &y);
     
-    while(y - x >= 0){
-        x *= 1.1;
+    while(i * i < y){
         i += 1;
     }
     printf("%d", i);
