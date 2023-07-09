@@ -5,7 +5,7 @@ bool IsDigit(unsigned char c) {
     if (c <= '9' && c >= '0') {
         return true;
     }
-    else{
+    else {
         return false;
     }
 }
