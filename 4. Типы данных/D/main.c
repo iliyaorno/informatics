@@ -4,7 +4,7 @@
 
 bool Compare(char c1[20], char c2[20])
 {
-    if(strcmp(c1, c2) == true) {
+    if(strcmp(c1, c2) != 0) {
         return true;
     }
     else {
@@ -21,6 +21,6 @@ int main () {
         printf("yes");
     }
     else {
-        printf("false");
+        printf("no");
     }
 }
