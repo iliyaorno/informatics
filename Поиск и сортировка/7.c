@@ -6,12 +6,13 @@ int main(){
     int n;
     int x;
     int st = 0;
-    scanf ("%d", &x);
-    scanf ("%d", &n);
+
+    scanf("%d", &x);
+    scanf("%d", &n);
     int a[n];
     for (int i = 0; i < n; i++) { 
         for (int j = 0; j < n; j++) {
-            scanf ("%d", &a[i]);
+            scanf("%d", &a[i]);
         } 
         for (int j = 0; j < n; j++) {
             if (x == a[i]){
@@ -21,10 +22,10 @@ int main(){
     }
 
     if (st == 1) {
-        printf ("YES");
+        printf("YES");
     }
     else{
-        printf ("NO");
+        printf("NO");
     }
     return 0;
 }

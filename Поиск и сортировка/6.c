@@ -6,10 +6,11 @@ int main(){
     int n;
     int max = 0;
     int max_i = 0;
-    scanf ("%d", &n);
+
+    scanf("%d", &n);
     int a[n];
     for (int i = 0; i < n; i++) {
-        scanf ("%d", &a[i]);
+        scanf("%d", &a[i]);
     }
     for (int i = 0; i < n; i++) {
         if (a[i] > max){
@@ -17,7 +18,7 @@ int main(){
             max_i = i;
         }
     } 
-    printf ("%d", max_i + 1);
+    printf("%d", max_i + 1);
 
     return 0;
 }

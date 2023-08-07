@@ -6,13 +6,14 @@ int main() {
     int n;
     int x;
     int y;
-    scanf ("%d", &n);
+
+    scanf("%d", &n);
     int a[n + 1];
-    scanf ("%d", &a[0]);
+    scanf("%d", &a[0]);
     x = a[0];
     y = a[0];
     for(int i = 1; i < n; i++) {
-        scanf ("%d", &a[i]);
+        scanf("%d", &a[i]);
         if(a[i] > x) {
             x = a[i];
         }
@@ -23,7 +24,7 @@ int main() {
     for(int i = 0; i < n; i++) {
         if(a[i] == x) {
             a[i] = y;
-            printf ("%d ", a[i]);
+            printf("%d ", a[i]);
         }
     }
     return 0;

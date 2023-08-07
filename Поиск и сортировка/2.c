@@ -7,22 +7,23 @@ int main() {
     int n;
     int x;
     int st = 0;
-    scanf ("%d", &n);
+
+    scanf("%d", &n);
     int a[n];
     for (int i = 0; i < n; i++) {
         scanf ("%d", &a[i]);
     }
-    scanf ("%d", &x);
+    scanf("%d", &x);
     for (int i = 0; i < n; i++) {
         if (x == a[i]){
             st = 1;
         }
     } 
     if (st == 1) {
-        printf ("YES");
+        printf("YES");
     }
     else {
-        printf ("NO");
+        printf("NO");
     }
     return 0;
 }

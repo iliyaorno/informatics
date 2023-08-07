@@ -7,14 +7,15 @@ int main() {
     int n;
     int x;
     int k;
-    scanf ("%d", &n);
+
+    scanf("%d", &n);
     int a[n];
     for (int i = 0; i < n; i++) {
-        scanf ("%d", &a[i]);
+        scanf("%d", &a[i]);
     }
-    scanf ("%d", &x);
+    scanf("%d", &x);
     for (int i = 0; i < n; i++) {
-        if (abs (a[i] - x) < abs (k - x) || abs (a[i] - x) == abs (k - x) && a[i] < k) {
+        if (abs(a[i] - x) < abs(k - x) || abs(a[i] - x) == abs(k - x) && a[i] < k) {
             k = a[i];
         }
     } 
