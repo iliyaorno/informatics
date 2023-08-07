@@ -1,4 +1,4 @@
-// https://informatics.msk.ru/mod/statements/view.php?id=252#1
+// https://informatics.msk.ru/mod/statements/view.php?id=252&chapterid=146#1
 
 #include <stdio.h>
 
