@@ -3,8 +3,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-int bin_search(int a[], int key, int m)
-{
+int bin_search(int a[], int key, int m){
     int left = 0;
     int right = m - 1;
     int mid;
@@ -22,8 +21,7 @@ int bin_search(int a[], int key, int m)
     }
     return false;
 }
-int main()
-{
+int main(){
     int n;
     int m;
     scanf("%d" "%d", &n, &m);
@@ -43,5 +41,7 @@ int main()
         else
             printf("NO\n");
     }
+    free(a);
+    free(b);
     return 0;
 }
