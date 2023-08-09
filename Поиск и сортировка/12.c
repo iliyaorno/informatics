@@ -1,36 +1,47 @@
 // https://informatics.msk.ru/mod/statements/view.php?id=192&chapterid=4#1
 #include <stdio.h>
-#include <ctype.h>
+#include <stdbool.h>
 #include <stdlib.h>
 
-int main(){
+int bin_search(int a[], int key, int m)
+{
+    int left = 0;
+    int right = m - 1;
+    int mid;
+
+    while (left <= right){
+        mid = (left + right) / 2;
+        if (key == a[mid]) {
+            return true;
+        }
+        if (key > a[mid]) {
+            left = mid + 1;
+        }
+        else
+            right = mid - 1;
+    }
+    return false;
+}
+int main()
+{
     int n;
-    int k;
-    int x;
+    int m;
+    scanf("%d" "%d", &n, &m);
     int *a;
     a = malloc(n * sizeof(int));
-    scanf("%d" "%d", &n, &k);
-    for (int i = 0; i < n; i++){
+    int *b;
+    b = malloc(m * sizeof(int));
+    for (int i = 0; i < n; i++) {
         scanf("%d", &a[i]);
     }
-    for (int j = 0; j < k; j++) {
-        scanf("%d", &x);
-        int L = 0;
-        int R = n;
-        while (L < R) {
-            int M = L + (R-L) / 2;
-            if (a[M] >= x)
-                R = M;
-            else
-                L = M + 1;
-        }
- 
-        if (a[L] == x){
+    for (int i = 0; i < m; i++)
+        scanf("%d", &b[i]);
+    for (int i = 0; i < m; i++)
+    {
+        if (bin_search(a, b[i], n))
             printf("YES\n");
-        }
-        else{ 
+        else
             printf("NO\n");
-        }
     }
     return 0;
 }
