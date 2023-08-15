@@ -1,4 +1,4 @@
-// https://informatics.msk.ru/mod/statements/view.php?id=207&chapterid=54#1
+https://informatics.msk.ru/mod/statements/view.php?id=207&chapterid=55#1
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -45,15 +45,23 @@ void push(struct stack *pt, int x)
  
 int top(struct stack *pt)
 {
-    if (!empty(pt)) {
+    if (empty(pt) != 0){
+        printf("error\n");
+    }
+    else {
         return pt->items[pt->top];
     }
 }
  
 int pop(struct stack *pt)
 {
-    printf("ok\n");
-    return pt -> items[pt -> top--];
+    if (empty(pt) != 0){
+        printf("error\n");
+    }
+    else{
+        printf("ok\n");
+        return pt -> items[pt -> top--];
+    }
 }
  
 int main()
